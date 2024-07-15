@@ -101,9 +101,14 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  start_measure();
+
   while (1)
   {
+	  //Symulacja dokonywania pomiaru co 10 sekund:
+	  start_measure();
+	  HAL_Delay(50);
+	  stop_measure();
+	  HAL_Delay(10000);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
